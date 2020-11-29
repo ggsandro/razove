@@ -1,0 +1,20 @@
+.navigation__list {
+  display: flex;
+  flex-wrap: wrap;
+  width: 421px;
+  margin-right: 324px;
+}
+
+.navigation__item {
+  margin-right: 52px;
+  font-family: "Pragmatica", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 32px;
+  cursor: pointer;
+}
+
+.navigation__item:last-child {
+  margin-right: 0;
+}

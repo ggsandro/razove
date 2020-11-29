@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>1razove</title>
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
+  <script>
+    // Picture element HTML5 shiv
+    document.createElement("picture");
+  </script>
+  <script src="js/picturefill.js" async=""></script>
+</head>
+
+<body>
+
+<!--  <div class="sprite" style="display:none">
+    <include src="build/img/sprite.svg"></include>
+  </div> -->
+
+  <header class="header">
+    <a class="site-logo" href="index.html">
+      <picture>
+        <source media="(min-width: 1300px)" srcset="img/logo-small.png">
+        <source media="(min-width: 768px)" srcset="img/logo-small.png">
+        <img class="site-logo__img" src="img/logo-small.png" alt="1razovoe logotype" width="247" height="68">
+      </picture>
+    </a>
+    <nav class="navigation">
+      <ul class="navigation__list">
+        <li class="navigation__item">Бренди та Напрямки</li>
+        <li class="navigation__item">Контактна Інформація</li>
+      </ul>
+      <div class="brands visually-hidden"> <!-- тимчасово висуал хидден -->
+        <ul class="brands__list">
+          <li class="brands__item">
+            <a class="brands__link" href="brand-page.html"><h2 class="brands__name">Maxtec</h2></a>
+            <p class="brands__discription">Анастезіологія та ІТ</p>
+          </li>
+          <li class="brands__item">
+            <a class="brands__link" href="brand-page.html">
+              <h2 class="brands__name">Flexicare</h2>
+            </a>
+            <p class="brands__discription">Анастезіологія та ІТ,  Екстрена медицина</p>
+          </li>
+          <li class="brands__item">
+            <a class="brands__link" href="brand-page.html">
+              <h2 class="brands__name">Ulrich Medical</h2>
+            </a>
+            <p class="brands__discription">Радіологія</p>
+          </li>
+          <li class="brands__item">
+            <a class="brands__link" href="brand-page.html">
+              <h2 class="brands__name">DeltaMed</h2>
+            </a>
+            <p class="brands__discription">Анастезіологія та ІТ, Радіологія, Інфузійна терапія, Екстрена медицина</p>
+          </li>
+        </ul>
+      </div>
+      <div class="navigation__card navigation__card--contats visually-hidden"> <!-- тимчасово висуал хидден -->
+        <ul class="navigation__contacts">
+          <li class="navigation__contact navigation__contact--adress">
+            <h2 class="navigation__heading">Наша адреса:</h2>
+            <address class="navigation__adress">
+              Б. Xмельницького, 39<br>
+              01033, Київ<br>
+            </address>
+          </li>
+          <li class="navigation__contact navigation__contact--telephone">
+            <h2 class="navigation__heading">Телефон:</h2>
+            <a href="tel:+380444543322"> +38 044 454 33 22 </a>
+          </li>
+          <li class="navigation__contact navigation__contact--email">
+            <h2 class="navigation__heading">Емейл:</h2>
+            <a href="info@1razove.ua">info@1razove.ua</a>
+          </li>
+          <li class="navigation__contact navigation__contact--social">
+            <h2 class="navigation__heading">Ми в соцмережах:</h2>
+            <section class="social">
+              <ul class="social__list">
+                <li class="social__item">
+                  <a class="social__link social__link--fb" href="#" aria-label="1razove facebook">
+                    <span class="visually-hidden">facebook</span>
+                    <svg class="social__icon social__icon--fb" width="40" height="40"><use xlink:href="#icon-fb"></use></svg>
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a class="social__link social__link--inst" href="#" aria-label="1razove Instagram">
+                    <span class="visually-hidden">Instagram</span>
+                    <svg class="social__icon social__icon--inst" width="40" height="40"><use xlink:href="#icon-inst"></use></svg>
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a class="social__link social__link--tm" href="#" aria-label="1razove telegram">
+                    <span class="visually-hidden">telegram</span>
+                    <svg class="social__icon social__icon--tm" width="40" height="40"><use xlink:href="#icon-tm"></use></svg>
+                  </a>
+                </li>
+              </ul>
+            </section>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="languages">
+      <ul class="languages__list">
+        <li class="languages__item">Укр</li>
+        <li class="languages__item">Рус</li>
+        <li class="languages__item">Eng</li>
+      </ul>
+    </div>
+  </header>
+  <main class="main">
+    <section class="main__brand">
+      <div class="main__discription">
+        <div class="main__logotype">
+          <picture>
+            <source media="(min-width: 1300px)" srcset="img/maxtec.svg">
+            <source media="(min-width: 768px)" srcset="img/maxtec.svg">
+            <img class="main__img main__img--maxtec" src="img/maxtec.svg" alt="maxtec logotype" width="277" height="92">
+          </picture>
+        </div>
+        <h1 class="main__heading">Maxtec</h1>
+        <p class="main__text">Maxtec has been a leader in oxygen analysis and delivery products for over 20 years.
+          We provide a full line of replacement oxygen sensors and SpO2 probes compatible with all major applications in the market.
+          Customers worldwide have come to appreciate Maxtec for our well-known oxygen analyzers and monitors in both medical and non-medical applications.
+          Our range of products also include pulse oximeters, neonatal products, air-oxygen mixers, ventilator and ventilator support products applicable to hospital,
+          homecare, and anesthesia markets.</p>
+        <div class="main__sphere">
+          <h2 class="main__heading main__heading--h2">Cфера використання:</h2>
+          <p class="main__text main__text--sphere">Анастезіологія </p>
+          <p class="main__text main__text--sphere">Інтенсивна терапія</p>
+        </div>
+        <a class="main__link button" href="#">Скачать прайс-лист</a>
+      </div>
+    </section>
+    <section class="products">
+      <h2 class="products__heading products__heading--h2">Унікальні товари</h2>
+      <div class="products__card">
+        <h2 class="products__heading">MaxVenturi® Система назальної високопотокової оксигенотерапії</h2>
+        <div class="products__wrapper products__wrapper--row">
+          <a class="products__link" href="product-page.html">
+            <picture>
+              <source type="image/webp" media="(min-width: 1300px)" srcset="img/MaxVenturi.webp">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/MaxVenturi.webp">
+              <source type="image/webp" srcset="img/MaxVenturi.webp">
+
+              <source media="(min-width: 1300px)" srcset="img/MaxVenturi.jpg">
+              <source media="(min-width: 768px)" srcset="img/MaxVenturi.jpg">
+              <img class="products__img" src="img/MaxVenturi.jpg" srcset="img/MaxVenturi.jpg" alt="Система назальної високопотокової оксигенотерапії MaxVenturi®">
+            </picture>
+          </a>
+          <div class="products__discription">
+            <p class="products__text">Система назальної високопотокової оксигенотерапії MaxVenturi® – це інноваційний пристрій,
+              який забезпечує подачу через назальну канюлю значного обсягу підігрітої та зволоженої повітряно-кисневої суміші,
+              що знижує можливість розвитку запального процесу в дихальних шляхах, а також зменшує енергетичні втрати, особливо в умовах,
+              коли спостерігається гостра дихальна недостатність.</p>
+            <a href="product-page.html" class="button">Дізнатись більше</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="footer__card">
+      <p class="footer__text"> <span class="footer__text footer__text--colored"> Якщо ви готові впроваджувати використання одноразових медичних виробів або хочете  проконсультуватися —</span> сміливо телефонуйте або пишіть нам:</p>
+      <ul class="footer__contacts">
+        <li class="footer__contact footer__contact--telephone">
+          <h2 class="footer__heading">Телефон:</h2>
+          <a href="tel:+380444543322"> +38 044 454 33 22 </a>
+        </li>
+        <li class="footer__contact footer__contact--email">
+          <h2 class="footer__heading">Емейл:</h2>
+          <a href="info@1razove.ua">info@1razove.ua</a>
+        </li>
+      </ul>
+    </div>
+    <a class="footer__link" href="#">Айдентика і Сайт: Other Land</a>
+  </footer>
+  <script src="js/script.js"></script>
+</body>
+
+</html>

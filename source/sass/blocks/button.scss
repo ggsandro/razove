@@ -1,0 +1,16 @@
+.button {
+  border: none;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  min-height: 40px;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-decoration: none;
+  background-color: red;
+
+  @include text(#ffffff, 14px, 18px);
+  font-weight: normal;
+  cursor: pointer;
+}

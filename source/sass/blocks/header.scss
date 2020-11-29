@@ -1,0 +1,37 @@
+.header {
+  width: 100%;
+  background-color: $bg-blue;
+  color: $white;
+  padding-top: 15px;
+  padding-bottom: 93px;
+}
+
+.header__wraper {
+  display: flex;
+
+  &--column {
+    flex-direction: column;
+    width: 893px;
+  }
+}
+
+.header__img {
+  max-width: none;
+  margin-right: 146px;
+}
+
+.header__text {
+  padding: 0;
+  margin-top: 402px;
+  font-family: "DINpro", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 54px;
+  line-height: 54px;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+
+  &--colored {
+    opacity: 0.5;
+  }
+}
