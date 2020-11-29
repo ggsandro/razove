@@ -1,0 +1,18 @@
+.languages__list {
+  display: flex;
+  width: 155px;
+}
+
+.languages__item {
+  margin-right: 30px;
+  font-family: "Pragmatica", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 32px;
+  cursor: pointer;
+}
+
+.languages__item:last-child {
+  margin-right: 0;
+}
