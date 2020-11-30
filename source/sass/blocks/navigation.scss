@@ -1,10 +1,11 @@
-.languages__list {
+.navigation__list {
   display: flex;
-  max-width: 155px;
+  flex-wrap: wrap;
+  max-width: 421px;
 }
 
-.languages__item {
-  margin-right: 30px;
+.navigation__item {
+  margin-right: 52px;
   font-family: "Pragmatica", "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -13,6 +14,6 @@
   cursor: pointer;
 }
 
-.languages__item:last-child {
+.navigation__item:last-child {
   margin-right: 0;
 }

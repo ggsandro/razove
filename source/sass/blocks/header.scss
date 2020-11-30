@@ -13,6 +13,10 @@
     flex-direction: column;
     width: 893px;
   }
+
+  &--menu {
+    justify-content: space-between;
+  }
 }
 
 .header__img {
