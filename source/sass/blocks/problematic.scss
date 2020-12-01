@@ -16,13 +16,13 @@
   font-family: "DINpro", "Arial", sans-serif;
   letter-spacing: -0.02em;
 
-  @include text (#FB4073, 90px, 76px);
+  @include text (#fb4073, 90px, 76px);
 
   &--card {
     margin-bottom: 30px;
     text-transform: uppercase;
 
-    @include text (#0627B0,50px, 50px);
+    @include text (#0627b0,50px, 50px);
   }
 }
 
@@ -31,7 +31,7 @@
   margin: 0;
   font-family: "DINpro", "Arial", sans-serif;
 
-  @include text (#2789FF,54px, 54px);
+  @include text (#2789ff,54px, 54px);
 }
 
 .problematic__card {
@@ -39,7 +39,7 @@
   left: 42px;
   width: 554px;
   height: 466px;
-  background: #2789FF;
+  background: #2789ff;
   border-radius: 30px;
   padding: 40px 30px 90px 42px;
 
@@ -48,7 +48,7 @@
   }
 
   &--second {
-    background:#FDBDC7;
+    background: #fdbdc7;
     top: 140px;
   }
 
