@@ -4,10 +4,11 @@
   list-style: none;
 }
 
-@mixin text($text-color, $font-size, $line-height) {
+@mixin text($text-color, $font-size, $line-height, $font-weight:500) {
   font-size: $font-size;
   line-height: $line-height;
   color: $text-color;
+  font-weight: $font-weight;
 }
 
 @mixin lr-paddings() {
