@@ -1,16 +1,22 @@
 .button {
   border: none;
   display: inline-block;
-  vertical-align: middle;
   text-align: center;
-  min-height: 40px;
+  min-height: 64px;
+  width: 50%;
+  border-radius: 10px;
   margin: 0 auto;
+  padding-top: 15px;
   padding-left: 20px;
   padding-right: 20px;
   text-decoration: none;
-  background-color: red;
+  background-color: $bg-blue;
 
-  @include text(#ffffff, 14px, 18px);
+  @include pragmatica (18px, 32px, $white);
   font-weight: normal;
   cursor: pointer;
+
+  &--bdf {
+    margin-top: 50px;
+  }
 }

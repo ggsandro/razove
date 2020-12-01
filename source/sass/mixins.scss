@@ -33,3 +33,23 @@
   background-position: $background-position;
   background-repeat: $background-repeat;
 }
+
+@mixin din-pro ($font-size, $line-height, $color) {
+  font-family: "DINpro", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: $font-size;
+  line-height: $line-height;
+  color: $color;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+}
+
+@mixin pragmatica ($font-size, $line-height, $color) {
+  font-family: "Pragmatica", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: $font-size;
+  line-height: $line-height;
+  color: $color;
+}

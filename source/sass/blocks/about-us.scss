@@ -1,0 +1,32 @@
+.about-us {
+  padding-top: 150px;
+}
+
+.about-us__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 150px;
+}
+
+.about-us__block {
+  display: flex;
+  width: 50%;
+  flex-direction: column;
+}
+
+.about-us__heading {
+  @include din-pro (90px, 54px, #0627b0);
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.about-us__discription {
+  @include din-pro (54px, 54px, #2789ff);
+  padding-right: 40px;
+  margin: 0;
+}
+
+.about-us__text {
+  @include pragmatica (24px, 32px, #0627b0);
+  margin-top: 0;
+}
