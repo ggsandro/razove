@@ -21,95 +21,104 @@
   </div> -->
 
   <header class="header">
-    <a class="site-logo" href="index.html">
-      <picture>
-        <source media="(min-width: 1300px)" srcset="img/logo-small.png">
-        <source media="(min-width: 768px)" srcset="img/logo-small.png">
-        <img class="site-logo__img" src="img/logo-small.png" alt="1razovoe logotype" width="247" height="68">
-      </picture>
-    </a>
-    <nav class="navigation">
-      <ul class="navigation__list">
-        <li class="navigation__item">Бренди та Напрямки</li>
-        <li class="navigation__item">Контактна Інформація</li>
-      </ul>
-      <div class="brands visually-hidden"> <!-- тимчасово висуал хидден -->
-        <ul class="brands__list">
-          <li class="brands__item">
-            <a class="brands__link" href="brand-page.html"><h2 class="brands__name">Maxtec</h2></a>
-            <p class="brands__discription">Анастезіологія та ІТ</p>
-          </li>
-          <li class="brands__item">
-            <a class="brands__link" href="brand-page.html">
-              <h2 class="brands__name">Flexicare</h2>
-            </a>
-            <p class="brands__discription">Анастезіологія та ІТ,  Екстрена медицина</p>
-          </li>
-          <li class="brands__item">
-            <a class="brands__link" href="brand-page.html">
-              <h2 class="brands__name">Ulrich Medical</h2>
-            </a>
-            <p class="brands__discription">Радіологія</p>
-          </li>
-          <li class="brands__item">
-            <a class="brands__link" href="brand-page.html">
-              <h2 class="brands__name">DeltaMed</h2>
-            </a>
-            <p class="brands__discription">Анастезіологія та ІТ, Радіологія, Інфузійна терапія, Екстрена медицина</p>
-          </li>
-        </ul>
-      </div>
-      <div class="navigation__card navigation__card--contats visually-hidden"> <!-- тимчасово висуал хидден -->
-        <ul class="navigation__contacts">
-          <li class="navigation__contact navigation__contact--adress">
-            <h2 class="navigation__heading">Наша адреса:</h2>
-            <address class="navigation__adress">
-              Б. Xмельницького, 39<br>
-              01033, Київ<br>
-            </address>
-          </li>
-          <li class="navigation__contact navigation__contact--telephone">
-            <h2 class="navigation__heading">Телефон:</h2>
-            <a href="tel:+380444543322"> +38 044 454 33 22 </a>
-          </li>
-          <li class="navigation__contact navigation__contact--email">
-            <h2 class="navigation__heading">Емейл:</h2>
-            <a href="info@1razove.ua">info@1razove.ua</a>
-          </li>
-          <li class="navigation__contact navigation__contact--social">
-            <h2 class="navigation__heading">Ми в соцмережах:</h2>
-            <section class="social">
-              <ul class="social__list">
-                <li class="social__item">
-                  <a class="social__link social__link--fb" href="#" aria-label="1razove facebook">
-                    <span class="visually-hidden">facebook</span>
-                    <svg class="social__icon social__icon--fb" width="40" height="40"><use xlink:href="#icon-fb"></use></svg>
-                  </a>
-                </li>
-                <li class="social__item">
-                  <a class="social__link social__link--inst" href="#" aria-label="1razove Instagram">
-                    <span class="visually-hidden">Instagram</span>
-                    <svg class="social__icon social__icon--inst" width="40" height="40"><use xlink:href="#icon-inst"></use></svg>
-                  </a>
-                </li>
-                <li class="social__item">
-                  <a class="social__link social__link--tm" href="#" aria-label="1razove telegram">
-                    <span class="visually-hidden">telegram</span>
-                    <svg class="social__icon social__icon--tm" width="40" height="40"><use xlink:href="#icon-tm"></use></svg>
-                  </a>
-                </li>
+    <div class="container">
+      <div class="header__wraper header__wraper--main">
+        <a class="header__logo" href="index.html">
+          <picture>
+            <source media="(min-width: 1300px)" srcset="img/logo.svg">
+            <source media="(min-width: 768px)" srcset="img/logo.svg">
+            <img class="header__img" src="img/logo.svg" alt="1razovoe logotype" width="316" height="522">
+          </picture>
+        </a>
+        <div class="header__wraper header__wraper--column">
+          <div class="header__wraper header__wraper--menu">
+            <nav class="navigation">
+              <ul class="navigation__list">
+                <li class="navigation__item">Бренди та Напрямки</li>
+                <li class="navigation__item">Контактна Інформація</li>
               </ul>
-            </section>
-          </li>
-        </ul>
+              <div class="brands visually-hidden"> <!-- тимчасово висуал хидден -->
+                <ul class="brands__list">
+                  <li class="brands__item">
+                    <a class="brands__link" href="brand-page.html"><h2 class="brands__name visually-hidden">Maxtec</h2></a>
+                    <p class="brands__discription">Анастезіологія та ІТ</p>
+                  </li>
+                  <li class="brands__item">
+                    <a class="brands__link" href="brand-page.html">
+                      <h2 class="brands__name visually-hidden">Flexicare</h2>
+                    </a>
+                    <p class="brands__discription">Анастезіологія та ІТ,  Екстрена медицина</p>
+                  </li>
+                  <li class="brands__item">
+                    <a class="brands__link" href="brand-page.html">
+                      <h2 class="brands__name visually-hidden">Ulrich Medical</h2>
+                    </a>
+                    <p class="brands__discription">Радіологія</p>
+                  </li>
+                  <li class="brands__item">
+                    <a class="brands__link" href="brand-page.html">
+                      <h2 class="brands__name visually-hidden">DeltaMed</h2>
+                    </a>
+                    <p class="brands__discription">Анастезіологія та ІТ, Радіологія, Інфузійна терапія, Екстрена медицина</p>
+                  </li>
+                </ul>
+              </div>
+              <div class="navigation__card navigation__card--contats visually-hidden"> <!-- тимчасово висуал хидден -->
+                <ul class="navigation__contacts">
+                  <li class="navigation__contact navigation__contact--adress">
+                    <h2 class="navigation__heading">Наша адреса:</h2>
+                    <address class="navigation__adress">
+                      Б. Xмельницького, 39<br>
+                      01033, Київ<br>
+                    </address>
+                  </li>
+                  <li class="navigation__contact navigation__contact--telephone">
+                    <h2 class="navigation__heading">Телефон:</h2>
+                    <a href="tel:+380444543322"> +38 044 454 33 22 </a>
+                  </li>
+                  <li class="navigation__contact navigation__contact--email">
+                    <h2 class="navigation__heading">Емейл:</h2>
+                    <a href="info@1razove.ua">info@1razove.ua</a>
+                  </li>
+                  <li class="navigation__contact navigation__contact--social">
+                    <h2 class="navigation__heading">Ми в соцмережах:</h2>
+                    <section class="social">
+                      <ul class="social__list">
+                        <li class="social__item">
+                          <a class="social__link social__link--fb" href="#" aria-label="1razove facebook">
+                            <span class="visually-hidden">facebook</span>
+                            <svg class="social__icon social__icon--fb" width="40" height="40"><use xlink:href="#icon-fb"></use></svg>
+                          </a>
+                        </li>
+                        <li class="social__item">
+                          <a class="social__link social__link--inst" href="#" aria-label="1razove Instagram">
+                            <span class="visually-hidden">Instagram</span>
+                            <svg class="social__icon social__icon--inst" width="40" height="40"><use xlink:href="#icon-inst"></use></svg>
+                          </a>
+                        </li>
+                        <li class="social__item">
+                          <a class="social__link social__link--tm" href="#" aria-label="1razove telegram">
+                            <span class="visually-hidden">telegram</span>
+                            <svg class="social__icon social__icon--tm" width="40" height="40"><use xlink:href="#icon-tm"></use></svg>
+                          </a>
+                        </li>
+                      </ul>
+                    </section>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+            <div class="languages">
+              <ul class="languages__list">
+                <li class="languages__item">Укр</li>
+                <li class="languages__item">Рус</li>
+                <li class="languages__item">Eng</li>
+              </ul>
+            </div>
+          </div>
+          <p class="header__text">А скільки пацієнтів та лікарів <span class="header__text header__text--colored">наражаються на небезпеку через неякісну обробку?</span></p>
+        </div>
       </div>
-    </nav>
-    <div class="languages">
-      <ul class="languages__list">
-        <li class="languages__item">Укр</li>
-        <li class="languages__item">Рус</li>
-        <li class="languages__item">Eng</li>
-      </ul>
     </div>
   </header>
   <main class="main">
@@ -164,20 +173,22 @@
     </section>
   </main>
   <footer class="footer">
-    <div class="footer__card">
-      <p class="footer__text"> <span class="footer__text footer__text--colored"> Якщо ви готові впроваджувати використання одноразових медичних виробів або хочете  проконсультуватися —</span> сміливо телефонуйте або пишіть нам:</p>
-      <ul class="footer__contacts">
-        <li class="footer__contact footer__contact--telephone">
-          <h2 class="footer__heading">Телефон:</h2>
-          <a href="tel:+380444543322"> +38 044 454 33 22 </a>
-        </li>
-        <li class="footer__contact footer__contact--email">
-          <h2 class="footer__heading">Емейл:</h2>
-          <a href="info@1razove.ua">info@1razove.ua</a>
-        </li>
-      </ul>
+    <div class="container">
+      <div class="footer__card">
+        <p class="footer__text"><span class="footer__text footer__text--colored"> Якщо ви готові впроваджувати використання одноразових медичних виробів або хочете  проконсультуватися —</span> сміливо телефонуйте або пишіть нам:</p>
+        <ul class="footer__contacts">
+          <li class="footer__contact footer__contact--email">
+            <h2 class="footer__heading visually-hidden">Емейл:</h2>
+            <a class="footer__contactlink" href="info@1razove.ua">info@1razove.ua</a>
+          </li>
+          <li class="footer__contact footer__contact--telephone">
+            <h2 class="footer__heading visually-hidden">Телефон:</h2>
+            <a class="footer__contactlink" href="tel:+380444543322"> +38 044 454 33 22 </a>
+          </li>
+        </ul>
+      </div>
+      <a class="footer__link" href="#">Айдентика і Сайт: Other Land</a>
     </div>
-    <a class="footer__link" href="#">Айдентика і Сайт: Other Land</a>
   </footer>
   <script src="js/script.js"></script>
 </body>

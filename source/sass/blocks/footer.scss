@@ -1,0 +1,47 @@
+.footer {
+  text-align: center;
+}
+
+.footer__card {
+  display: flex;
+  flex-direction: column;
+  max-width: 1360px;
+  min-height: 525px;
+  padding: 40px 45px;
+  padding-right: 415px;
+  margin: 0 auto;
+  background-color: $bg-blue;
+  border-radius: 30px;
+}
+
+.footer__text {
+  margin: 0;
+  margin-bottom: auto;
+  padding-right: 55px;
+  text-align: left;
+
+  @include din-pro (50px, 50px, #fb4073);
+
+  &--colored {
+    padding: 0;
+    color: #2789ff;
+  }
+}
+
+.footer__contacts {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footer__contactlink {
+  @include din-pro (50px, 50px, $white);
+}
+
+.footer__link {
+  display: inline-block;
+  margin-top: 25px;
+  margin-bottom: 30px;
+
+  @include pragmatica (18px, 32px, #0627b0);
+}
