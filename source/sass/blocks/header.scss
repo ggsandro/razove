@@ -4,6 +4,17 @@
   color: $white;
   padding-top: 15px;
   padding-bottom: 93px;
+
+  &--product {
+    background-color: $white;
+    color: #0627b0;
+  }
+}
+
+.header__link {
+  @include din-pro (18px, 27px, #0627b0);
+  display: inline-block;
+  margin-top: 30px;
 }
 
 .header__wraper {
