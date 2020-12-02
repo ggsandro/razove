@@ -1,0 +1,151 @@
+.product__card {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 150px;
+}
+
+.product__image {
+  width: 50%;
+}
+
+.product__discriprion {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.product__name {
+  @include din-pro (54px, 54px, #0627b0);
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+
+.product__text {
+  @include pragmatica (18px, 24px, #0627b0);
+
+  &--advantages {
+    line-height: 27px;
+  }
+}
+
+.product__heading {
+  @include din-pro (54px, 54px, #2789ff);
+  text-transform: uppercase;
+  margin: 0;
+
+  &--advantages {
+    font-size: 50px;
+    line-height: 50px;
+  }
+
+  &--photos {
+    @include din-pro (50px, 54px, #0627b0);
+    text-transform: uppercase;
+  }
+}
+
+.product__item {
+  min-height: 255px;
+  padding: 30px 40px;
+  border-radius: 30px;
+  background-color: #f0f0f0;
+  margin-bottom: 15px;
+
+  &:last-child {
+    margin-bottom: 70px;
+  }
+}
+
+.product__numberedlist {
+  list-style: none;
+  counter-reset: product-counter;
+  padding: 0;
+  margin-bottom: 50px;
+}
+
+.product__numbereditem {
+  counter-increment: product-counter;
+  position: relative;
+  padding-left: 58px;
+  margin-bottom: 25px;
+
+  @include pragmatica (18px, 24px, #0627b0);
+
+  &::before {
+    @include pseudo;
+    content: counter(product-counter);
+    top: 0;
+    left: 0;
+    width: 33px;
+    height: 33px;
+    padding-top: 5px;
+    border-radius: 7px;
+    background-color: #fb4073;
+    display: inline-block;
+    color: $white;
+    font-size: 17px;
+    line-height: 22px;
+    text-align: center;
+  }
+}
+
+.product__numbereditem:last-child {
+  margin-bottom: 0;
+}
+
+.product__indications {
+  margin-bottom: 32px;
+  margin-top: 32px;
+}
+
+.product__slider {
+  display: flex;
+  width: 100%;
+  margin-top: 40px;
+  margin-left: auto;
+  margin-right: auto;
+
+  max-width: 1440px;
+  padding-left: 40px;
+}
+
+.product__slide {
+  height: 468px;
+  border-radius: 20px;
+  margin-right: 15px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.product__slides {
+  padding-top: 40px;
+  padding-bottom: 65px;
+  background-color: #f0f0f0;
+}
+
+.product__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.product__toggls {
+  display: flex;
+  justify-content: space-between;
+
+  @include din-pro (40px, 54px, #0627b0);
+}
+
+.product__arrow {
+  cursor: pointer;
+}
+
+.product__arrow--left {
+  margin-right: 20px;
+}
+
+.product__arrow--right {
+  margin-right: 5px;
+}

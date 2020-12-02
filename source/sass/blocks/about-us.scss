@@ -18,10 +18,12 @@
   @include din-pro (90px, 54px, #0627b0);
   margin-top: 15px;
   margin-bottom: 15px;
+  text-transform: uppercase;
 }
 
 .about-us__discription {
   @include din-pro (54px, 54px, #2789ff);
+  text-transform: uppercase;
   padding-right: 40px;
   margin: 0;
 }
