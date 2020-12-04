@@ -12,6 +12,10 @@
   font-size: 18px;
   line-height: 32px;
   cursor: pointer;
+
+  &--blue {
+    color: #0627b0;
+  }
 }
 
 .languages__item:last-child {

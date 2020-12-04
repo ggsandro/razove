@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Razove</title>
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
+  <script>
+    // Picture element HTML5 shiv
+    document.createElement("picture");
+  </script>
+  <script src="js/picturefill.js" async=""></script>
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header__wraper header__wraper--main">
+        <a class="header__logo" href="index.html">
+          <picture>
+            <source media="(min-width: 1300px)" srcset="img/logo.svg">
+            <source media="(min-width: 768px)" srcset="img/logo.svg">
+            <img class="header__img" src="img/logo.svg" alt="1razovoe logotype" width="316" height="522">
+          </picture>
+        </a>
+        <div class="header__wraper header__wraper--column">
+          <div class="header__wraper header__wraper--menu">
+            <nav class="navigation">
+              <ul class="navigation__list">
+                <li class="navigation__item">Бренди та Напрямки</li>
+                <li class="navigation__item"><a class="navigation__link" href="contacts.html">Контактна Інформація</a></li>
+              </ul>
+              <div class="brands visually-hidden"> <!-- тимчасово висуал хидден -->
+                <ul class="brands__list">
+                  <li class="brands__item">
+                    <a class="brands__link" href="brand-page.html"><h2 class="brands__name visually-hidden">Maxtec</h2></a>
+                    <p class="brands__discription">Анастезіологія та ІТ</p>
+                  </li>
+                  <li class="brands__item">
+                    <a class="brands__link" href="brand-page.html">
+                      <h2 class="brands__name visually-hidden">Flexicare</h2>
+                    </a>
+                    <p class="brands__discription">Анастезіологія та ІТ,  Екстрена медицина</p>
+                  </li>
+                  <li class="brands__item">
+                    <a class="brands__link" href="brand-page.html">
+                      <h2 class="brands__name visually-hidden">Ulrich Medical</h2>
+                    </a>
+                    <p class="brands__discription">Радіологія</p>
+                  </li>
+                  <li class="brands__item">
+                    <a class="brands__link" href="brand-page.html">
+                      <h2 class="brands__name visually-hidden">DeltaMed</h2>
+                    </a>
+                    <p class="brands__discription">Анастезіологія та ІТ, Радіологія, Інфузійна терапія, Екстрена медицина</p>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+            <div class="languages">
+              <ul class="languages__list">
+                <li class="languages__item">Укр</li>
+                <li class="languages__item">Рус</li>
+                <li class="languages__item">Eng</li>
+              </ul>
+            </div>
+          </div>
+          <div class="header__error">
+            <h1 class="header__text header__text--err">404</h1>
+            <p class="header__text header__text--err"> Упс! <span class="header__text header__text--colored">ТакоЇ сторінки не існує</span></p>
+            <a class="header__link button button--index" href="index.html">На головну сторінку</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <script src="js/script.js"></script>
+</body>
+
+</html>

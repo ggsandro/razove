@@ -3,7 +3,15 @@
   background-color: $bg-blue;
   color: $white;
   padding-top: 15px;
-  padding-bottom: 93px;
+  padding-bottom: 70px;
+
+  @media (min-width: 950px) {
+    padding-bottom: 95px;
+  }
+
+  &--contacts {
+    background-color: $white;
+  }
 
   &--product {
     background-color: $white;
@@ -19,34 +27,69 @@
 
 .header__wraper {
   display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+
+  @media (min-width: 950px) {
+    flex-direction: row;
+  }
 
   &--column {
     flex-direction: column;
-    width: 893px;
   }
 
   &--menu {
+    position: relative;
     justify-content: space-between;
   }
 }
 
 .header__img {
   max-width: none;
-  margin-right: 146px;
+  margin-right: 0;
+  width: 167px;
+  height: 261px;
+
+  @media (min-width: 950px) {
+    width: 316px;
+    height: 512px;
+    margin-right: 146px;
+  }
+
+  &--small {
+    width: 173px;
+    height: 39px;
+    margin-right: 0;
+
+    @media (min-width: 950px) {
+      width: 247px;
+      height: 56px;
+      margin-right: 215px;
+    }
+  }
 }
 
 .header__text {
   padding: 0;
-  margin-top: 402px;
-  font-family: "DINpro", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 54px;
-  line-height: 54px;
-  letter-spacing: -0.02em;
+
+  @include din-pro (42px, 44px, $white);
   text-transform: uppercase;
+
+  @media (min-width: 950px) {
+    margin-top: 402px;
+
+    @include din-pro (54px, 54px, $white);
+  }
 
   &--colored {
     color: #2789ff;
   }
+
+  &--err {
+    margin: 0;
+  }
+}
+
+.header__error {
+  margin-top: auto;
 }

@@ -4,9 +4,6 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-  <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
-  <meta name="viewport" content="width=device-width" />
   <title>Razove</title>
   <link rel="stylesheet" href="css/style.min.css">
   <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
@@ -19,9 +16,9 @@
 
 <body>
 
-<!--  <div class="sprite" style="display:none">
+  <div class="sprite" style="display:none">
     <include src="build/img/sprite.svg"></include>
-  </div> -->
+  </div>
 
   <header class="header">
     <div class="container">
@@ -38,7 +35,7 @@
             <nav class="navigation">
               <ul class="navigation__list">
                 <li class="navigation__item">Бренди та Напрямки</li>
-                <li class="navigation__item">Контактна Інформація</li>
+                <li class="navigation__item"><a class="navigation__link" href="contacts.html">Контактна Інформація</a></li>
               </ul>
               <div class="brands visually-hidden"> <!-- тимчасово висуал хидден -->
                 <ul class="brands__list">
@@ -66,50 +63,6 @@
                   </li>
                 </ul>
               </div>
-              <div class="navigation__card navigation__card--contats visually-hidden"> <!-- тимчасово висуал хидден -->
-                <ul class="navigation__contacts">
-                  <li class="navigation__contact navigation__contact--adress">
-                    <h2 class="navigation__heading">Наша адреса:</h2>
-                    <address class="navigation__adress">
-                      Б. Xмельницького, 39<br>
-                      01033, Київ<br>
-                    </address>
-                  </li>
-                  <li class="navigation__contact navigation__contact--telephone">
-                    <h2 class="navigation__heading">Телефон:</h2>
-                    <a href="tel:+380444543322"> +38 044 454 33 22 </a>
-                  </li>
-                  <li class="navigation__contact navigation__contact--email">
-                    <h2 class="navigation__heading">Емейл:</h2>
-                    <a href="info@1razove.ua">info@1razove.ua</a>
-                  </li>
-                  <li class="navigation__contact navigation__contact--social">
-                    <h2 class="navigation__heading">Ми в соцмережах:</h2>
-                    <section class="social">
-                      <ul class="social__list">
-                        <li class="social__item">
-                          <a class="social__link social__link--fb" href="#" aria-label="1razove facebook">
-                            <span class="visually-hidden">facebook</span>
-                            <svg class="social__icon social__icon--fb" width="40" height="40"><use xlink:href="#icon-fb"></use></svg>
-                          </a>
-                        </li>
-                        <li class="social__item">
-                          <a class="social__link social__link--inst" href="#" aria-label="1razove Instagram">
-                            <span class="visually-hidden">Instagram</span>
-                            <svg class="social__icon social__icon--inst" width="40" height="40"><use xlink:href="#icon-inst"></use></svg>
-                          </a>
-                        </li>
-                        <li class="social__item">
-                          <a class="social__link social__link--tm" href="#" aria-label="1razove telegram">
-                            <span class="visually-hidden">telegram</span>
-                            <svg class="social__icon social__icon--tm" width="40" height="40"><use xlink:href="#icon-tm"></use></svg>
-                          </a>
-                        </li>
-                      </ul>
-                    </section>
-                  </li>
-                </ul>
-              </div>
             </nav>
             <div class="languages">
               <ul class="languages__list">
@@ -118,6 +71,11 @@
                 <li class="languages__item">Eng</li>
               </ul>
             </div>
+          </div>
+          <div class="header__error visually-hidden">
+            <p class="header__text header__text--err">404</p>
+            <p class="header__text header__text--err"> Упс! <span class="header__text header__text--colored">ТакоЇ сторінки не існує</span></p>
+            <a class="header__link button button--index" href="index.html">На головну сторінку</a>
           </div>
           <p class="header__text">А скільки пацієнтів та лікарів <span class="header__text header__text--colored">наражаються на небезпеку через неякісну обробку?</span></p>
         </div>

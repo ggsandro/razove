@@ -1,0 +1,19 @@
+.social__list {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.social__item {
+  display: inline-block;
+  margin-right: 15px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.social__icon {
+  width: 40px;
+  height: 40px;
+}
