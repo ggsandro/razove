@@ -27,7 +27,7 @@
           <picture>
             <source media="(min-width: 1300px)" srcset="img/logo-small-blue.png">
             <source media="(min-width: 768px)" srcset="img/logo-small-blue.png">
-            <img class="header__img" src="img/logo-small-blue.png" alt="1razovoe logotype" width="247" height="56">
+            <img class="header__img header__img--small" src="img/logo-small-blue.png" alt="1razovoe logotype" width="247" height="56">
           </picture>
         </a>
         <div class="header__wraper header__wraper--column">
@@ -35,7 +35,7 @@
             <nav class="navigation">
               <ul class="navigation__list">
                 <li class="navigation__item">Бренди та Напрямки</li>
-                <li class="navigation__item">Контактна Інформація</li>
+                <li class="navigation__item"><a class="navigation__link navigation__link--blue" href="contacts.html">Контактна Інформація</a></li>
               </ul>
               <div class="brands visually-hidden"> <!-- тимчасово висуал хидден -->
                 <ul class="brands__list">
@@ -124,7 +124,7 @@
   <main class="product">
     <div class="container">
     <section class="product__card">
-      <div class="product__image">
+      <div class="product__image product__image--desktop">
         <picture>
           <source type="image/webp" media="(min-width: 1300px)" srcset="img/MaxVenturi-large.webp">
           <source type="image/webp" media="(min-width: 768px)" srcset="img/MaxVenturi-large.webp">
@@ -137,6 +137,17 @@
       </div>
       <div class="product__discriprion">
         <h1 class="product__name">MaxVenturi® Система назальної високопотокової оксигенотерапії</h1>
+        <div class="product__image product__image--mobile">
+          <picture>
+            <source type="image/webp" media="(min-width: 1300px)" srcset="img/MaxVenturi-large.webp">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/MaxVenturi-large.webp">
+            <source type="image/webp" srcset="img/MaxVenturi-large.webp">
+
+            <source media="(min-width: 1300px)" srcset="img/MaxVenturi-large.png">
+            <source media="(min-width: 768px)" srcset="img/MaxVenturi-large.png">
+            <img class="product__img" src="img/MaxVenturi-large.png" srcset="img/MaxVenturi-large.png" alt="Система назальної високопотокової оксигенотерапії MaxVenturi®">
+          </picture>
+        </div>
         <p class="product__text">Система назальної високопотокової оксигенотерапії MaxVenturi® – це інноваційний пристрій,
           який забезпечує подачу через назальну канюлю значного обсягу підігрітої та зволоженої повітряно-кисневої суміші,
           що знижує можливість розвитку запального процесу в дихальних шляхах, а також зменшує енергетичні втрати, особливо в умовах,
@@ -171,7 +182,7 @@
           </ul>
         </section>
         <div class="leaflet">
-          <p class="leaflet__text">Завантажте&nbsp;листівку<span class="leaflet__text leaflet__text--colored"> із&nbsp;науковими даними про використання одноразових медичних виробів</span></p>
+          <p class="leaflet__text">Завантажте&nbsp;листівку <span class="leaflet__text leaflet__text--colored">із даними про Систему назальной вісокопотоковоі оксигенотерапии MaxVenturi® </span></p>
           <a class="leaflet__link button" href="#">Завантажити PDF</a>
         </div>
       </div>
@@ -196,7 +207,7 @@
 
             <source media="(min-width: 1300px)" srcset="img/slide1.png">
             <source media="(min-width: 768px)" srcset="img/slide1.png">
-            <img class="product__img" src="img/slide1.jpg" srcset="img/slide1.png" alt="Система назальної високопотокової оксигенотерапії MaxVenturi®">
+            <img class="product__slideimg" src="img/slide1.jpg" srcset="img/slide1.png" alt="Система назальної високопотокової оксигенотерапії MaxVenturi®">
           </picture>
         </div>
         <div class="product__slide">
@@ -207,7 +218,7 @@
 
             <source media="(min-width: 1300px)" srcset="img/slide2.png">
             <source media="(min-width: 768px)" srcset="img/slide2.png">
-            <img class="product__img" src="img/slide2.jpg" srcset="img/slide2.png" alt="Система назальної високопотокової оксигенотерапії MaxVenturi®">
+            <img class="product__slideimg" src="img/slide2.jpg" srcset="img/slide2.png" alt="Система назальної високопотокової оксигенотерапії MaxVenturi®">
           </picture>
         </div>
         <div class="product__slide">
@@ -218,7 +229,7 @@
 
             <source media="(min-width: 1300px)" srcset="img/slide3.png">
             <source media="(min-width: 768px)" srcset="img/slide3.png">
-            <img class="product__img" src="img/slide1.jpg" srcset="img/slide3.png" alt="Система назальної високопотокової оксигенотерапії MaxVenturi®">
+            <img class="product__slideimg" src="img/slide1.jpg" srcset="img/slide3.png" alt="Система назальної високопотокової оксигенотерапії MaxVenturi®">
           </picture>
         </div>
         <div class="product__slide">
@@ -229,14 +240,14 @@
 
             <source media="(min-width: 1300px)" srcset="img/slide4.png">
             <source media="(min-width: 768px)" srcset="img/slide4.png">
-            <img class="product__img" src="img/slide4.jpg" srcset="img/slide4.png" alt="Система назальної високопотокової оксигенотерапії MaxVenturi®">
+            <img class="product__slideimg" src="img/slide4.jpg" srcset="img/slide4.png" alt="Система назальної високопотокової оксигенотерапії MaxVenturi®">
           </picture>
         </div>
       </div>
     </section>
   </main>
   <footer class="footer">
-    <div class="container">
+    <div class="container container--padding0">
       <div class="footer__card">
         <p class="footer__text"><span class="footer__text footer__text--colored"> Якщо ви готові впроваджувати використання одноразових медичних виробів або хочете  проконсультуватися —</span> сміливо телефонуйте або пишіть нам:</p>
         <ul class="footer__contacts">
