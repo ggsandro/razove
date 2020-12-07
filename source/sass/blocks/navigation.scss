@@ -38,7 +38,6 @@
   }
 
   &--mobile {
-    color: #0627b0;
     @include pragmatica (18px, 22px, #0627b0);
 
     @media (min-width: 950px) {
