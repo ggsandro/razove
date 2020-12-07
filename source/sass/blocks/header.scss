@@ -3,7 +3,7 @@
   background-color: $bg-blue;
   color: $white;
   padding-top: 15px;
-  padding-bottom: 70px;
+  padding-bottom: 60px;
 
   @media (min-width: 950px) {
     padding-bottom: 95px;
@@ -30,6 +30,26 @@
   flex-grow: 1;
   flex-direction: column;
 
+  &--menu {
+    position: fixed;
+    width: 100%;
+    min-height: 222px;
+    padding: 30px 15px;
+    padding-top: 15px;
+    top: 0;
+    left: 0;
+    background-color: $white;
+    color: #0627b0;
+    border-radius: 0 0 20px 20px;
+
+    @media (min-width: 950px) {
+      position: relative;
+      justify-content: space-between;
+      color: $white;
+      background-color: transparent;
+    }
+  }
+
   @media (min-width: 950px) {
     flex-direction: row;
   }
@@ -38,9 +58,22 @@
     flex-direction: column;
   }
 
-  &--menu {
-    position: relative;
+  &--row {
+    flex-direction: row;
     justify-content: space-between;
+
+    @media (min-width: 950px) {
+      display: none;
+    }
+  }
+}
+
+.header__logo--mobile {
+  display: block;
+  margin-bottom: 30px;
+
+  @media (min-width: 950px) {
+    display: none;
   }
 }
 
@@ -87,6 +120,17 @@
 
   &--err {
     margin: 0;
+  }
+}
+
+.header__menu {
+  display: block;
+  width: 40px;
+  height: 40px;
+  background-color: $white;
+
+  @media (min-width: 950px) {
+    display: none;
   }
 }
 

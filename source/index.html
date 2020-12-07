@@ -34,35 +34,9 @@
           <div class="header__wraper header__wraper--menu">
             <nav class="navigation">
               <ul class="navigation__list">
-                <li class="navigation__item">Бренди та Напрямки</li>
+                <li class="navigation__item"><a class="navigation__link" href="index.html#brands"> Бренди та Напрямки </a> </li>
                 <li class="navigation__item"><a class="navigation__link" href="contacts.html">Контактна Інформація</a></li>
               </ul>
-              <div class="brands visually-hidden"> <!-- тимчасово висуал хидден -->
-                <ul class="brands__list">
-                  <li class="brands__item">
-                    <a class="brands__link" href="brand-page.html"><h2 class="brands__name visually-hidden">Maxtec</h2></a>
-                    <p class="brands__discription">Анастезіологія та ІТ</p>
-                  </li>
-                  <li class="brands__item">
-                    <a class="brands__link" href="brand-page.html">
-                      <h2 class="brands__name visually-hidden">Flexicare</h2>
-                    </a>
-                    <p class="brands__discription">Анастезіологія та ІТ,  Екстрена медицина</p>
-                  </li>
-                  <li class="brands__item">
-                    <a class="brands__link" href="brand-page.html">
-                      <h2 class="brands__name visually-hidden">Ulrich Medical</h2>
-                    </a>
-                    <p class="brands__discription">Радіологія</p>
-                  </li>
-                  <li class="brands__item">
-                    <a class="brands__link" href="brand-page.html">
-                      <h2 class="brands__name visually-hidden">DeltaMed</h2>
-                    </a>
-                    <p class="brands__discription">Анастезіологія та ІТ, Радіологія, Інфузійна терапія, Екстрена медицина</p>
-                  </li>
-                </ul>
-              </div>
             </nav>
             <div class="languages">
               <ul class="languages__list">
@@ -84,7 +58,7 @@
   </header>
   <main class="main">
     <h1 class="main__heading visually-hidden">1razovoe</h1>
-    <section class="problematic">
+    <!-- <section class="problematic">
       <div class="problematic__card-wrapper">
         <div class="problematic__card problematic__card--first">
           <h3 class="problematic__heading problematic__heading--card">Переробка складна, дорога і не дає 100% стерильність</h3>
@@ -155,8 +129,9 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
     <section class="brands">
+      <a class="brands__link" name="brands"></a>
       <div class="container">
         <h2 class="brands__heading">Товари провідних світових брендів</h2>
         <ul class="brands__list">
@@ -205,6 +180,7 @@
             <p class="brands__discription brands__discription--deltamed">Анастезіологія та ІТ, Радіологія, Інфузійна терапія, Екстрена медицина</p>
           </li>
         </ul>
+        <button class="brands__button button button--more button--on" type="button" name="button">Показати більше</button>
       </div>
     </section>
     <section class="about-us">
@@ -228,7 +204,7 @@
     </section>
   </main>
   <footer class="footer">
-    <div class="container">
+    <div class="container container--padding0">
       <div class="footer__card">
         <p class="footer__text"><span class="footer__text footer__text--colored"> Якщо ви готові впроваджувати використання одноразових медичних виробів або хочете  проконсультуватися —</span> сміливо телефонуйте або пишіть нам:</p>
         <ul class="footer__contacts">
@@ -245,7 +221,7 @@
       <a class="footer__link" href="#">Айдентика і Сайт: Other Land</a>
     </div>
   </footer>
-  <script src="js/script.js"></script>
+  <script type="text/javascript" src="js/script.js"></script>
 </body>
 
 </html>

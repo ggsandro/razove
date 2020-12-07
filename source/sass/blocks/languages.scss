@@ -6,12 +6,13 @@
 
 .languages__item {
   margin-right: 30px;
-  font-family: "Pragmatica", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 32px;
+
+  @include pragmatica (18px, 22px, #0627b0);
   cursor: pointer;
+
+  @media (min-width: 950px) {
+    @include pragmatica (18px, 32px, #ffffff);
+  }
 
   &--blue {
     color: #0627b0;

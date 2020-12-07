@@ -13,12 +13,14 @@
 
 .navigation__item {
   margin-right: 52px;
-  font-family: "Pragmatica", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 32px;
+  margin-bottom: 10px;
+
+  @include pragmatica (18px, 32px, #ffffff);
   cursor: pointer;
+
+  @media (min-width: 950px) {
+    margin-bottom: 0;
+  }
 
   &--blue {
     color: #0627b0;
@@ -33,6 +35,15 @@
 
   &--blue {
     color: #0627b0;
+  }
+
+  &--mobile {
+    color: #0627b0;
+    @include pragmatica (18px, 22px, #0627b0);
+
+    @media (min-width: 950px) {
+      color: $white;
+    }
   }
 }
 
