@@ -32,10 +32,24 @@
         </a>
         <div class="header__wraper header__wraper--column">
           <div class="header__wraper header__wraper--menu">
+            <div class="header__wraper header__wraper--row">
+              <a class="header__logo header__logo--mobile" href="index.html">
+                <picture>
+                  <source media="(min-width: 1300px)" srcset="img/logo-small-blue.png">
+                  <source media="(min-width: 768px)" srcset="img/logo-small-blue.png">
+                  <img class="header__img header__img--small" src="img/logo-small-blue.png" alt="1razovoe logotype" width="247" height="56">
+                </picture>
+              </a>
+              <button class="header__menu header__menu--on" type="button"><span class="visually-hidden">Открыть меню</span>
+                <span class="header__toggle">
+                  x
+                </span>
+              </button>
+            </div>
             <nav class="navigation">
               <ul class="navigation__list">
-                <li class="navigation__item"><a class="navigation__link" href="index.html#brands"> Бренди та Напрямки </a> </li>
-                <li class="navigation__item"><a class="navigation__link" href="contacts.html">Контактна Інформація</a></li>
+                <li class="navigation__item"><a class="navigation__link navigation__link--mobile" href="index.html#brands"> Бренди та Напрямки </a> </li>
+                <li class="navigation__item"><a class="navigation__link navigation__link--mobile" href="contacts.html">Контактна Інформація</a></li>
               </ul>
             </nav>
             <div class="languages">
@@ -45,11 +59,6 @@
                 <li class="languages__item">Eng</li>
               </ul>
             </div>
-          </div>
-          <div class="header__error visually-hidden">
-            <p class="header__text header__text--err">404</p>
-            <p class="header__text header__text--err"> Упс! <span class="header__text header__text--colored">ТакоЇ сторінки не існує</span></p>
-            <a class="header__link button button--index" href="index.html">На головну сторінку</a>
           </div>
           <p class="header__text">А скільки пацієнтів та лікарів <span class="header__text header__text--colored">наражаються на небезпеку через неякісну обробку?</span></p>
         </div>
@@ -137,47 +146,55 @@
         <ul class="brands__list">
           <li class="brands__item">
             <a class="brands__link" href="brand-page.html">
-              <h2 class="brands__name visually-hidden">Maxtec</h2>
-              <picture>
-                <source media="(min-width: 1300px)" srcset="img/maxtec-small.png">
-                <source media="(min-width: 768px)" srcset="img/maxtec-small.png">
-                <img class="brands__img brands__img--maxtec" src="img/maxtec-small.png" alt="maxtec logotype" width="176" height="59">
-              </picture>
+              <div class="brands__wrapper">
+                <h2 class="brands__name visually-hidden">Maxtec</h2>
+                <picture>
+                  <source media="(min-width: 1300px)" srcset="img/maxtec-small.png">
+                  <source media="(min-width: 768px)" srcset="img/maxtec-small.png">
+                  <img class="brands__img brands__img--maxtec" src="img/maxtec-small.png" alt="maxtec logotype" width="176" height="59">
+                </picture>
+                <p class="brands__discription brands__discription--maxtec">Анастезіологія та ІТ</p>
+              </div>
             </a>
-            <p class="brands__discription brands__discription--maxtec">Анастезіологія та ІТ</p>
           </li>
           <li class="brands__item">
             <a class="brands__link" href="brand-page.html">
-              <h2 class="brands__name visually-hidden">Ulrich Medical</h2>
-              <picture>
-                <source media="(min-width: 1300px)" srcset="img/ulrich-small.png">
-                <source media="(min-width: 768px)" srcset="img/ulrich-small.png">
-                <img class="brands__img brands__img--ulrich" src="img/ulrich-small.png" alt="Ulrich Medical logotype" width="128" height="46">
-              </picture>
+              <div class="brands__wrapper">
+                <h2 class="brands__name visually-hidden">Ulrich Medical</h2>
+                <picture>
+                  <source media="(min-width: 1300px)" srcset="img/ulrich-small.png">
+                  <source media="(min-width: 768px)" srcset="img/ulrich-small.png">
+                  <img class="brands__img brands__img--ulrich" src="img/ulrich-small.png" alt="Ulrich Medical logotype" width="128" height="46">
+                </picture>
+              <p class="brands__discription brands__discription--ulrich">Радіологія</p>
+              </div>
             </a>
-            <p class="brands__discription brands__discription--ulrich">Радіологія</p>
           </li>
           <li class="brands__item">
             <a class="brands__link" href="brand-page.html">
-              <h2 class="brands__name visually-hidden">Flexicare</h2>
-              <picture>
-                <source media="(min-width: 1300px)" srcset="img/flexicare-small.png">
-                <source media="(min-width: 768px)" srcset="img/flexicare-small.png">
-                <img class="brands__img brands__img--flexicare" src="img/flexicare-small.png" alt="Flexicare logotype" width="147" height="59">
-              </picture>
+              <div class="brands__wrapper">
+                <h2 class="brands__name visually-hidden">Flexicare</h2>
+                <picture>
+                  <source media="(min-width: 1300px)" srcset="img/flexicare-small.png">
+                  <source media="(min-width: 768px)" srcset="img/flexicare-small.png">
+                  <img class="brands__img brands__img--flexicare" src="img/flexicare-small.png" alt="Flexicare logotype" width="147" height="59">
+                </picture>
+                <p class="brands__discription brands__discription--flexicare">Анастезіологія та ІТ,  Екстрена медицина</p>
+              </div>
             </a>
-            <p class="brands__discription brands__discription--flexicare">Анастезіологія та ІТ,  Екстрена медицина</p>
           </li>
           <li class="brands__item">
             <a class="brands__link" href="brand-page.html">
-              <h2 class="brands__name visually-hidden">DeltaMed</h2>
-              <picture>
-                <source media="(min-width: 1300px)" srcset="img/deltamed-small.png">
-                <source media="(min-width: 768px)" srcset="img/deltamed-small.png">
-                <img class="brands__img brands__img--deltamed" src="img/deltamed-small.png" alt="DeltaMed logotype" width="191" height="60">
-              </picture>
+              <div class="brands__wrapper">
+                <h2 class="brands__name visually-hidden">DeltaMed</h2>
+                <picture>
+                  <source media="(min-width: 1300px)" srcset="img/deltamed-small.png">
+                  <source media="(min-width: 768px)" srcset="img/deltamed-small.png">
+                  <img class="brands__img brands__img--deltamed" src="img/deltamed-small.png" alt="DeltaMed logotype" width="191" height="60">
+                </picture>
+                <p class="brands__discription brands__discription--deltamed">Анастезіологія та ІТ, Радіологія, Інфузійна терапія, Екстрена медицина</p>
+              </div>
             </a>
-            <p class="brands__discription brands__discription--deltamed">Анастезіологія та ІТ, Радіологія, Інфузійна терапія, Екстрена медицина</p>
           </li>
         </ul>
         <button class="brands__button button button--more button--on" type="button" name="button">Показати більше</button>
