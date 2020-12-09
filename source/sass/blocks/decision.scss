@@ -2,16 +2,30 @@
   padding-top: 90px;
   background-color: $bg-blue;
   color: $white;
+
+  @media (min-width: 950px) {
+    padding-top: 50px;
+  }
 }
 
 .decision__wrapper {
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
+
+  @media (min-width: 950px) {
+    flex-direction: row;
+  }
 
   &--column {
     flex-direction: column;
-    margin-left: 20px;
-    margin-bottom: 100px;
+    margin-left: 0;
+    margin-bottom: 50px;
+
+    @media (min-width: 950px) {
+      margin-left: 20px;
+      margin-bottom: 100px;
+    }
   }
 
   &--main {
@@ -19,24 +33,41 @@
   }
 }
 
+.decision__logo {
+  margin-bottom: 60px;
+
+  @media (min-width: 950px) {
+    margin-bottom: 0;
+  }
+}
+
 .decision__img {
-  max-width: none;
+  width: 167px;
+
+  @media (min-width: 950px) {
+    min-width: 325px;
+    height: 397px;
+  }
 }
 
 .decision__text {
   padding: 0;
   margin: 0;
-  font-family: "DINpro", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 54px;
-  line-height: 54px;
-  letter-spacing: -0.02em;
+
+  @include din-pro (42px, 44px, $white);
   text-transform: uppercase;
 
+  @media (min-width: 950px) {
+    @include din-pro (54px, 54px, $white);
+  }
+
   &--colored {
-    padding-right: 200px;
+    padding-right: 0;
     color: #2789ff;
+
+    @media (min-width: 950px) {
+      padding-right: 200px;
+    }
   }
 }
 
@@ -44,19 +75,30 @@
   list-style: none;
   counter-reset: product-counter;
   padding: 0;
-  margin-bottom: 158px;
+  margin-top: 30px;
+  margin-bottom: 80px;
+
+  @media (min-width: 950px) {
+    margin-bottom: 158px;
+  }
 }
 
 .decision__item {
   counter-increment: decision-counter;
   position: relative;
   padding-left: 58px;
-  margin-bottom: 25px;
-  font-family: "Pragmatica", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 24px;
-  line-height: 32px;
+  padding-top: 5px;
+  padding-bottom: 7px;
+  margin-bottom: 23px;
+
+  @include pragmatica (16px, 21px, #ffffff);
+
+  @media (min-width: 950px) {
+    @include pragmatica (24px, 32px, #ffffff);
+    margin-bottom: 20px;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
 
   &::before {
     @include pseudo;
@@ -82,7 +124,15 @@
 
 .decision__video {
   width: 100%;
-  height: 589px;
-  margin-top: 20px;
-  border-radius: 50px;
+  height: 200px;
+  margin-top: 5px;
+  border-radius: 20px;
+  opacity: 0.7;
+
+  @media (min-width: 950px) {
+    width: 100%;
+    height: 589px;
+    margin-top: 20px;
+    border-radius: 50px;
+  }
 }

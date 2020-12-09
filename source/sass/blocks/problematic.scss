@@ -45,19 +45,19 @@
   padding: 40px 30px 90px 42px;
 
   &--first {
-    top: 0px;
-    left: 0px;
+    top: 0;
+    left: 0;
   }
 
   &--second {
-    background:#FDBDC7;
+    background: #fdbdc7;
     top: 40px;
-    left: 0px;
+    left: 0;
   }
 
   &--third {
     top: 80px;
-    left: 0px;
+    left: 0;
   }
 }
 
@@ -89,14 +89,15 @@
     flex-direction: column-reverse;
     align-items: center;
     padding: 80px 15px;
-}
-.problematic__card-wrapper {
-  min-height: 560px;
-  margin-right: 0;
-}
+  }
 
-.problematic__wrapper {
-  max-width: 100%;
-  margin-bottom: 60px;
-}
+  .problematic__card-wrapper {
+    min-height: 560px;
+    margin-right: 0;
+  }
+
+  .problematic__wrapper {
+    max-width: 100%;
+    margin-bottom: 60px;
+  }
 }

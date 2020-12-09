@@ -17,6 +17,10 @@
     background-color: $white;
     color: #0627b0;
   }
+
+  &--404 {
+    height: 100vh;
+  }
 }
 
 .header__link {
@@ -32,6 +36,7 @@
 
   &--menu {
     position: fixed;
+    z-index: 1;
     width: 100%;
     min-height: 222px;
     padding: 30px 15px;
