@@ -1,12 +1,13 @@
 .problematic {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-around;
   position: relative;
   padding: 100px 40px 393px 40px;
 }
 
 .problematic__wrapper {
   max-width: 670px;
+  width: 100%;
 }
 
 .problematic__heading {
@@ -44,16 +45,19 @@
   padding: 40px 30px 90px 42px;
 
   &--first {
-    top: 100px;
+    top: 0px;
+    left: 0px;
   }
 
   &--second {
-    background: #fdbdc7;
-    top: 140px;
+    background:#FDBDC7;
+    top: 40px;
+    left: 0px;
   }
 
   &--third {
-    top: 180px;
+    top: 80px;
+    left: 0px;
   }
 }
 
@@ -70,4 +74,29 @@
 
 .problematic__list-wrapper {
   padding-left: 20px;
+}
+
+.problematic__card-wrapper {
+  min-width: 554px;
+  position: relative;
+  margin-right: 61px;
+}
+
+
+@media (max-width: 1160px) {
+  .problematic {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    padding: 80px 15px;
+}
+.problematic__card-wrapper {
+  min-height: 560px;
+  margin-right: 0;
+}
+
+.problematic__wrapper {
+  max-width: 100%;
+  margin-bottom: 60px;
+}
 }
