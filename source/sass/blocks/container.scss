@@ -6,6 +6,11 @@
   &--padding0 {
     padding: 0;
   }
+
+  &--slider {
+    margin-top: 20px;
+    padding-right: 0;
+  }
 }
 
 @media (min-width: 950px) {
@@ -13,5 +18,10 @@
     max-width: 1440px;
     padding: 0 40px;
     margin: 0 auto;
+
+    &--slider {
+      margin-top: 40px;
+      padding-right: 0;
+    }
   }
 }

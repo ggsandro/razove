@@ -7,6 +7,9 @@
   <title>Razove</title>
   <link rel="stylesheet" href="css/style.min.css">
   <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.3/tiny-slider.css">
+
   <script>
     // Picture element HTML5 shiv
     document.createElement("picture");
@@ -133,61 +136,65 @@
     </section>
     </div>
     <section class="product__slides">
-      <div class="container">
-        <div class="product__wrapper">
+      <div class="product__wrapper container">
           <h2 class="product__heading product__heading--photos">Фото продукту</h2>
           <div class="product__toggls">
-            <div class="product__arrow product__arrow--left">←</div>
-            <div class="product__arrow product__arrow--right">→</div>
+            <div class="product__arrow product__arrow--prev">←</div>
+            <div class="product__arrow product__arrow--next">→</div>
+          </div>
+        </div>
+      <div class="container  container--slider">
+        <div class="product__slider">
+          <div class="product__slide">
+            <picture>
+              <source type="image/webp" srcset="img/slide1.webp">
+              <img class="product__slideimg" src="img/slide1.jpg" srcset="img/slide1.png" alt="Система назальної високопотокової оксигенотерапії MaxVenturi®">
+            </picture>
+          </div>
+          <div class="product__slide">
+            <picture>
+              <source type="image/webp" srcset="img/slide2.webp">
+              <img class="product__slideimg" src="img/slide2.jpg" srcset="img/slide2.png" alt="Система назальної високопотокової оксигенотерапії MaxVenturi®">
+            </picture>
+          </div>
+          <div class="product__slide">
+            <picture>
+              <source type="image/webp" srcset="img/slide3.webp">
+              <img class="product__slideimg" src="img/slide3.jpg" srcset="img/slide3.png" alt="Система назальної високопотокової оксигенотерапії MaxVenturi®">
+            </picture>
+          </div>
+          <div class="product__slide">
+            <picture>
+              <source type="image/webp" srcset="img/slide4.webp">
+              <img class="product__slideimg" src="img/slide4.jpg" srcset="img/slide4.png" alt="Система назальної високопотокової оксигенотерапії MaxVenturi®">
+            </picture>
+          </div>
+          <div class="product__slide">
+            <picture>
+              <source type="image/webp" srcset="img/slide1.webp">
+              <img class="product__slideimg" src="img/slide1.jpg" srcset="img/slide1.png" alt="Система назальної високопотокової оксигенотерапії MaxVenturi®">
+            </picture>
+          </div>
+          <div class="product__slide">
+            <picture>
+              <source type="image/webp" srcset="img/slide2.webp">
+              <img class="product__slideimg" src="img/slide2.jpg" srcset="img/slide2.png" alt="Система назальної високопотокової оксигенотерапії MaxVenturi®">
+            </picture>
+          </div>
+          <div class="product__slide">
+            <picture>
+              <source type="image/webp" srcset="img/slide3.webp">
+              <img class="product__slideimg" src="img/slide3.jpg" srcset="img/slide3.png" alt="Система назальної високопотокової оксигенотерапії MaxVenturi®">
+            </picture>
+          </div>
+          <div class="product__slide">
+            <picture>
+              <source type="image/webp" srcset="img/slide4.webp">
+              <img class="product__slideimg" src="img/slide4.jpg" srcset="img/slide4.png" alt="Система назальної високопотокової оксигенотерапії MaxVenturi®">
+            </picture>
           </div>
         </div>
       </div>
-    <!--  <div class="product__slider">
-        <div class="product__slide">
-          <picture>
-            <source type="image/webp" media="(min-width: 1300px)" srcset="img/slide1.webp">
-            <source type="image/webp" media="(min-width: 768px)" srcset="img/slide1.webp">
-            <source type="image/webp" srcset="img/slide1.webp">
-
-            <source media="(min-width: 1300px)" srcset="img/slide1.png">
-            <source media="(min-width: 768px)" srcset="img/slide1.png">
-            <img class="product__slideimg" src="img/slide1.jpg" srcset="img/slide1.png" alt="Система назальної високопотокової оксигенотерапії MaxVenturi®">
-          </picture>
-        </div>
-        <div class="product__slide">
-          <picture>
-            <source type="image/webp" media="(min-width: 1300px)" srcset="img/slide2.webp">
-            <source type="image/webp" media="(min-width: 768px)" srcset="img/slide2.webp">
-            <source type="image/webp" srcset="img/slide1.webp">
-
-            <source media="(min-width: 1300px)" srcset="img/slide2.png">
-            <source media="(min-width: 768px)" srcset="img/slide2.png">
-            <img class="product__slideimg" src="img/slide2.jpg" srcset="img/slide2.png" alt="Система назальної високопотокової оксигенотерапії MaxVenturi®">
-          </picture>
-        </div>
-        <div class="product__slide">
-          <picture>
-            <source type="image/webp" media="(min-width: 1300px)" srcset="img/slide3.webp">
-            <source type="image/webp" media="(min-width: 768px)" srcset="img/slide3.webp">
-            <source type="image/webp" srcset="img/slide3.webp">
-
-            <source media="(min-width: 1300px)" srcset="img/slide3.png">
-            <source media="(min-width: 768px)" srcset="img/slide3.png">
-            <img class="product__slideimg" src="img/slide1.jpg" srcset="img/slide3.png" alt="Система назальної високопотокової оксигенотерапії MaxVenturi®">
-          </picture>
-        </div>
-        <div class="product__slide">
-          <picture>
-            <source type="image/webp" media="(min-width: 1300px)" srcset="img/slide4.webp">
-            <source type="image/webp" media="(min-width: 768px)" srcset="img/slide4.webp">
-            <source type="image/webp" srcset="img/slide4.webp">
-
-            <source media="(min-width: 1300px)" srcset="img/slide4.png">
-            <source media="(min-width: 768px)" srcset="img/slide4.png">
-            <img class="product__slideimg" src="img/slide4.jpg" srcset="img/slide4.png" alt="Система назальної високопотокової оксигенотерапії MaxVenturi®">
-          </picture>
-        </div>
-      </div> -->
     </section>
   </main>
   <footer class="footer">
@@ -208,18 +215,8 @@
       <a class="footer__link" href="#">Айдентика і Сайт: Other Land</a>
     </div>
   </footer>
-  <div class="popup">
-    <picture>
-      <source type="image/webp" media="(min-width: 1300px)" srcset="img/slide1.webp">
-      <source type="image/webp" media="(min-width: 768px)" srcset="img/slide1.webp">
-      <source type="image/webp" srcset="img/slide1.webp">
-
-      <source media="(min-width: 1300px)" srcset="img/slide1.png">
-      <source media="(min-width: 768px)" srcset="img/slide1.png">
-      <img class="popup__img" src="img/slide1.jpg" srcset="img/slide1.png" alt="Система назальної високопотокової оксигенотерапії MaxVenturi®">
-    </picture>
-  </div>
-  <script type="text/javascript" src="js/script.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+  <script type="module" src="js/script.js"></script>
 </body>
 
 </html>
