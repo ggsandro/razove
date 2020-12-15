@@ -1,7 +1,6 @@
 var slider = window.tns({
   container: '.product__slider',
   items: 2,
-  slideBy: 'page',
   autoplay: true,
   autoWidth: true,
   gutter: 10,
