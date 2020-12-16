@@ -11,6 +11,11 @@
     margin-top: 20px;
     padding-right: 0;
   }
+
+  &--problematic {
+    padding-right: 0;
+    padding-left: 0;
+  }
 }
 
 @media (min-width: 950px) {
@@ -22,6 +27,19 @@
     &--slider {
       margin-top: 40px;
       padding-right: 0;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1440px;
+    padding: 0 40px;
+    margin: 0 auto;
+
+    &--problematic {
+      padding-right: 0;
+      padding-left: 0;
     }
   }
 }
