@@ -10,7 +10,7 @@
   padding-top: 30px;
   padding-bottom: 30px;
   padding-left: 15px;
-  padding-top: 15px;
+  padding-right: 15px;
   margin: 0 auto;
 
   @media (min-width: 950px) {
@@ -18,7 +18,7 @@
     padding-top: 30px;
     padding-bottom: 30px;
     padding-left: 25px;
-    padding-top: 25px;
+    padding-right: 25px;
   }
 }
 
@@ -47,8 +47,8 @@
     top: 15px;
     left: 0;
     width: 30px;
-    height:2px;
-    background: #0627B0;
+    height: 2px;
+    background: #0627b0;
     transform: rotate(45deg);
 
     @media (min-width: 950px) {
@@ -64,7 +64,7 @@
     left: 0;
     width: 30px;
     height: 2px;
-    background: #0627B0;
+    background: #0627b0;
     transform: rotate(135deg);
 
     @media (min-width: 950px) {
@@ -106,7 +106,18 @@
   outline: none;
 }
 
-::-webkit-input-placeholder {@include pragmatica (18px, 32px, #2789ff);}
-::-moz-placeholder          {@include pragmatica (18px, 32px, #2789ff);}
-:-moz-placeholder           {@include pragmatica (18px, 32px, #2789ff);}
-:-ms-input-placeholder      {@include pragmatica (18px, 32px, #2789ff);}
+::-webkit-input-placeholder {
+  @include pragmatica (18px, 32px, #2789ff);
+}
+
+::-moz-placeholder {
+  @include pragmatica (18px, 32px, #2789ff);
+}
+
+:-moz-placeholder {
+  @include pragmatica (18px, 32px, #2789ff);
+}
+
+:-ms-input-placeholder {
+  @include pragmatica (18px, 32px, #2789ff);
+}

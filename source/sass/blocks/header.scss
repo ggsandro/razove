@@ -3,7 +3,6 @@
   background-color: $bg-blue;
   color: $white;
   padding-top: 15px;
-  padding-bottom: 60px;
 
   @media (min-width: 950px) {
     padding-bottom: 95px;
@@ -52,6 +51,7 @@
     border-radius: 0 0 20px 20px;
 
     @media (min-width: 950px) {
+      min-height: inherit;
       position: relative;
       justify-content: space-between;
       color: $white;
@@ -74,6 +74,10 @@
     @media (min-width: 950px) {
       display: none;
     }
+  }
+
+  &--main {
+    align-items: center;
   }
 }
 
@@ -118,7 +122,8 @@
   text-transform: uppercase;
 
   @media (min-width: 950px) {
-    margin-top: 402px;
+    margin-top: auto;
+    margin-bottom: 0;
 
     @include din-pro (54px, 54px, $white);
   }
