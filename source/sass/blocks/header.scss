@@ -53,6 +53,7 @@
     @media (min-width: 950px) {
       min-height: inherit;
       position: relative;
+      margin-bottom: auto;
       justify-content: space-between;
       color: $white;
       background-color: transparent;
@@ -65,6 +66,7 @@
 
   &--column {
     flex-direction: column;
+    justify-content: space-between;
   }
 
   &--row {
@@ -78,6 +80,10 @@
 
   &--main {
     align-items: center;
+  }
+
+  &--index {
+    height: 516px;
   }
 }
 
@@ -122,7 +128,6 @@
   text-transform: uppercase;
 
   @media (min-width: 950px) {
-    margin-top: auto;
     margin-bottom: 0;
 
     @include din-pro (54px, 54px, $white);
