@@ -15,18 +15,11 @@
 </head>
 
 <body>
-
-<!--  <div class="sprite" style="display:none">
-    <include src="build/img/sprite.svg"></include>
-  </div> -->
-
-  <header class="header">
+  <header class="header header--brand">
     <div class="container">
       <div class="header__wraper header__wraper--main">
         <a class="header__logo" href="index.html">
           <picture>
-            <source media="(min-width: 1300px)" srcset="img/logo-small-white.png">
-            <source media="(min-width: 768px)" srcset="img/logo-small-white.png">
             <img class="header__img header__img--small" src="img/logo-small-white.png" alt="1razovoe logotype" width="247" height="56">
           </picture>
         </a>
@@ -35,8 +28,6 @@
             <div class="header__wraper header__wraper--row">
               <a class="header__logo header__logo--mobile" href="index.html">
                 <picture>
-                  <source media="(min-width: 1300px)" srcset="img/logo-small-blue.png">
-                  <source media="(min-width: 768px)" srcset="img/logo-small-blue.png">
                   <img class="header__img header__img--small" src="img/logo-small-blue.png" alt="1razovoe logotype" width="247" height="56">
                 </picture>
               </a>
@@ -66,45 +57,76 @@
   </header>
   <main class="brand">
     <section class="brand__discription">
-      <div class="brand__logotype">
-        <picture>
-          <img class="brand__img brand__img--maxtec" src="img/maxtec.svg" alt="maxtec logotype" width="277" height="92">
-        </picture>
-      </div>
-      <h1 class="brand__heading">Maxtec</h1>
-      <p class="brand__text">Maxtec has been a leader in oxygen analysis and delivery products for over 20 years.
-        We provide a full line of replacement oxygen sensors and SpO2 probes compatible with all major applications in the market.
-        Customers worldwide have come to appreciate Maxtec for our well-known oxygen analyzers and monitors in both medical and non-medical applications.
-        Our range of products also include pulse oximeters, neonatal products, air-oxygen mixers, ventilator and ventilator support products applicable to hospital,
-        homecare, and anesthesia markets.</p>
-      <div class="brand__sphere">
-        <h2 class="brand__heading brand__heading--h2">Cфера використання:</h2>
-        <p class="brand__text brand__text--sphere">Анастезіологія </p>
-        <p class="brand__text brand__text--sphere">Інтенсивна терапія</p>
-      </div>
-      <a class="brand__link button" href="#">Скачать прайс-лист</a>
-    </section>
-    <section class="products">
-      <h2 class="products__heading products__heading--h2">Унікальні товари</h2>
-      <div class="products__card">
-        <h2 class="products__heading">MaxVenturi® Система назальної високопотокової оксигенотерапії</h2>
-        <div class="products__wrapper products__wrapper--row">
-          <a class="products__link" href="product-page.html">
+      <div class="container">
+        <div class="brand__wrapper">
+          <div class="brand__logotype brand__logotype--desctop">
             <picture>
-              <source type="image/webp" srcset="img/MaxVenturi.webp">
-
-              <img class="products__img" src="img/MaxVenturi.jpg" srcset="img/MaxVenturi.jpg" alt="Система назальної високопотокової оксигенотерапії MaxVenturi®">
+              <img class="brand__img brand__img" src="img/maxtec.svg" alt="logotype" width="277" height="92">
             </picture>
-          </a>
-          <div class="products__discription">
-            <p class="products__text">Система назальної високопотокової оксигенотерапії MaxVenturi® – це інноваційний пристрій,
-              який забезпечує подачу через назальну канюлю значного обсягу підігрітої та зволоженої повітряно-кисневої суміші,
-              що знижує можливість розвитку запального процесу в дихальних шляхах, а також зменшує енергетичні втрати, особливо в умовах,
-              коли спостерігається гостра дихальна недостатність.</p>
-            <a href="product-page.html" class="button">Дізнатись більше</a>
+          </div>
+          <div class="brand__wrapper brand__wrapper--column">
+            <h1 class="brand__heading">Maxtec</h1>
+            <div class="brand__logotype brand__logotype--mobile">
+              <picture>
+                <img class="brand__img" src="img/maxtec.svg" alt="logotype" width="277" height="92">
+              </picture>
+            </div>
+            <p class="brand__text">Maxtec has been a leader in oxygen analysis and delivery products for over 20 years.
+              We provide a full line of replacement oxygen sensors and SpO2 probes compatible with all major applications in the market.
+              Customers worldwide have come to appreciate Maxtec for our well-known oxygen analyzers and monitors in both medical and non-medical applications.
+              Our range of products also include pulse oximeters, neonatal products, air-oxygen mixers, ventilator and ventilator support products applicable to hospital,
+              homecare, and anesthesia markets.</p>
+            <div class="brand__sphere">
+              <h2 class="brand__heading brand__heading--colored brand__heading--h2">Cфера використання:</h2>
+              <p class="brand__text brand__text--sphere">Анастезіологія та ІТ, Радіологія, Інфузійна терапія, Екстрена медицина </p>
+            </div>
+            <a class="brand__link button button--price" href="#">Отримати прайс-лист</a>
           </div>
         </div>
       </div>
+    </section>
+    <section class="products container container--padding0">
+      <h2 class="products__heading products__heading--h2">Унікальні товари</h2>
+      <div class="products__wrapper products__wrapper--cards">
+        <div class="products__card">
+          <h2 class="products__heading">MaxVenturi® Система назальної високопотокової оксигенотерапії</h2>
+          <div class="products__wrapper products__wrapper--row">
+            <div class="products__prev">
+              <a class="products__link" href="product-page.html">
+                <picture>
+                  <source type="image/webp" srcset="img/MaxVenturi.webp">
+                  <img class="products__img" src="img/MaxVenturi.jpg" srcset="img/MaxVenturi.jpg" alt="Система назальної високопотокової оксигенотерапії MaxVenturi®" width="228" height="317">
+                </picture>
+              </a>
+            </div>
+            <div class="products__discription">
+              <p class="products__text">Система назальної високопотокової оксигенотерапії MaxVenturi® – це інноваційний пристрій,
+                який забезпечує подачу через назальну канюлю значного обсягу підігрітої та зволоженої повітряно-кисневої суміші,
+                що знижує можливість розвитку запального процесу в дихальних шляхах, а також зменшує енергетичні втрати, особливо в умовах,
+                коли спостерігається гостра дихальна недостатність.</p>
+              <a href="product-page.html" class="button button--products">Дізнатись більше</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <section class="form container container-padding0">
+        <p class="form__text form__text--main">Отримати прайс-лист продуктів Maxtec</p>
+        <p class="form__text">Введіть ваші дані і ми відправимо вам прайс-лист на пошту.</p>
+        <form action="https://echo.htmlacademy.ru" method="post">
+          <div class="form__wrapper">
+            <label class="form__label visually-hidden" for="name"> Ваше ім’я / Назва організації </label>
+            <input class="form__input" type="text" name="name" id="name" placeholder="Ваше ім’я / Назва організації" required>
+          </div>
+          <div class="form__wrapper">
+            <label class="form__label visually-hidden" for="email"> Email </label>
+            <input class="form__input" type="text" name="name" id="email" placeholder="Email" required>
+          </div>
+          <input class="form__submit button button--submit" type="submit" name="submit" value="Отримати прайс-лист">
+          <div class="form__toggle"></div>
+        </form>
+      </section>
     </section>
   </main>
   <footer class="footer">
@@ -125,7 +147,6 @@
       <a class="footer__link" href="#">Айдентика і Сайт: Other Land</a>
     </div>
   </footer>
-  <script type="text/javascript" src="js/script.js"></script>
 </body>
 
 </html>

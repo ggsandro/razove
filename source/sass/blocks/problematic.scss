@@ -10,7 +10,11 @@
   font-family: "DINpro", "Arial", sans-serif;
   letter-spacing: -0.02em;
 
-  @include text (#fb4073, 90px, 76px);
+  @include text (#fb4073, 54px, 37px);
+
+  @media (min-width: 950px) {
+    @include text (#fb4073, 90px, 76px);
+  }
 
   &--card {
     margin-bottom: 30px;
@@ -25,7 +29,11 @@
   margin: 0;
   font-family: "DINpro", "Arial", sans-serif;
 
-  @include text (#2789ff,54px, 54px);
+  @include text (#2789ff, 42px, 44px);
+
+  @media (min-width: 950px) {
+    @include text (#2789ff, 54px, 54px);
+  }
 }
 
 .problematic__card {
@@ -61,7 +69,11 @@
   list-style: disc;
   font-family: "Pragmatica", "Arial", sans-serif;
 
-  @include text (#ffffff,24px, 28px, 400);
+  @include text (#ffffff, 18px, 22px, 400);
+
+  @media (min-width: 950px) {
+    @include text (#ffffff, 24px, 28px, 400);
+  }
 }
 
 .problematic__item {
@@ -88,7 +100,11 @@
   position: relative;
   min-height: 550px;
   padding-bottom: 100px;
-  min-width: 554px;
+  min-width: 375px;
+
+  @media (min-width: 950px) {
+    min-width: 554px;
+  }
 }
 
 .problematic__discription {
